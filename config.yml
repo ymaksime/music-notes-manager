@@ -1,0 +1,29 @@
+# Specify the directory where you want to store the sorted PDF
+# This directory must contain all the sub-directories for individual instruments
+#destination_dir: "/home/yevgeniy/Dropbox/MusicNotes/hopeOrchestra/TECHNICAL/"
+destination_dir: "/home/yevgeniy/Documents/sandbox/music-notes-manager/"
+
+# This dictionary contains the information about the hopeOrchestra directory
+# You need to specify the absolute path and the list of music folders
+# that you need to copy the music from
+# Ex: song: ['Hallelujah', 'Holy_is_He']
+hope_orchestra_dir:
+  path: "/home/yevgeniy/Dropbox/MusicNotes/hopeOrchestra/"
+  song: []
+
+# This dictionary contains the information about the combinedOrchestra directory
+# You need to specify the absolute path and the list of music folders
+# that you need to copy the music from
+# Ex: song: ['Jerusalem', 'How_Great_Thou_Art']
+combined_orchestra_dir: 
+  path: "/home/yevgeniy/Dropbox/MusicNotes/combinedOrchestra/"
+  song: ['How_Great_Thou_Art']
+
+
+# This dictionary contains the information about the any that has music directory
+# You need to specify the absolute path and the list of music folders
+# that you need to copy the music from
+# Ex: song: ['music1', 'music2']
+other_dir:
+  path: 
+  song: []
