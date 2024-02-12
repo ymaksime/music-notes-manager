@@ -20,7 +20,6 @@ instruments_dictionary = {
     "percussion" : {"include" : [".*percussion.*", ".*triangle.*", ".*glockenspiel.*"], "exclude" : []},
     "harp" : {"include" : [".*harp.*"], "exclude" : []},
     "piano" : {"include" : [".*piano.*", ".*rhythm.*", ".*synth.*"], "exclude" : []},
-    "choir" : {"include" : [".*choir.*"], "exclude" : []},
     "violin_i" : {"include" : [".*violin_i.*", ".*violin_i_ii.*", ".*violin_1.*", ".*violin_1_2.*"], "exclude" : [".*violin_ii", ".*violin_iii.*"]},
     "violin_ii" : {"include" : [".*violin_i_ii.*", ".*violin_1_2.*", ".*violin_ii.*", ".*violin_2.*"], "exclude" : [".*violin_iii.*"]},
     "violin_iii" : {"include" : [".*violin_iii.*", ".*violin_3.*"], "exclude" : []},
@@ -146,8 +145,8 @@ if __name__ == '__main__':
                     shutil.copy2(file_path, to_location)
 
     list_of_songs = []
-    for x in conf['combined_orchestra_dir']['song']:
-        list_of_songs.append(Song(x, conf['combined_orchestra_dir']['path']))
+    for x in conf['hope_orchestra_dir']['song']:
+        list_of_songs.append(Song(x, conf['hope_orchestra_dir']['path']))
 
     for s in list_of_songs:
         copy_files(s)
